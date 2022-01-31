@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+<script>
+  alert("This page is loading..")
+</script>
+</head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/submit" method='post'>
+  <label for="Science">Enter number with Country Code (Example: +91):</label><br>
+  <input type="text" id="science" name="science" value="null"><br>
+  <label for="Maths">Enter message</label><br>
+  <input type="text" id="maths" name="maths" value="null"><br><br>
+  <label for="C">Hours:</label><br>
+  <input type="text" id="c" name="c" value="null"><br><br>
+  <label for="datascience">Mins:</label><br>
+  <input type="text" id="datascience" name="datascience" value="null"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+
+</body>
+</html>
